@@ -21,7 +21,7 @@ public class Bat extends Activity{
 	private int leftMargin;
 	private int topMargin;
 	private boolean appear=true;
-	private boolean catchPPk=false;
+	private boolean catchPPk=true;
 	public static Bat instance2 = null;
 	
 	public void setBat(ImageView img, LayoutParams lay, int left, int top,TextView batNum){

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/level2_success">
+    
+    <Button 
+       android:id="@+id/level2_next"
+       android:layout_width="42dp"
+       android:layout_height="42dp"
+       android:layout_marginLeft="245dp"
+       android:layout_marginTop="340dp"
+       android:background="@drawable/next_level"/>
+    <Button 
+       android:id="@+id/level2_menu"
+       android:layout_width="42dp"
+       android:layout_height="42dp"
+       android:layout_marginLeft="245dp"
+       android:layout_marginTop="390dp"
+       android:background="@drawable/menu"/>
+    <TextView 
+       android:id="@+id/level3_txt1"
+       android:layout_width="200dp"
+       android:layout_height="60dp"
+       android:layout_marginLeft="70dp"
+       android:layout_marginTop="45dp"
+       android:text="You Win!"
+       android:textSize="49sp"
+       android:textColor="#3A9BEB"
+       android:textStyle="bold"
+       android:shadowColor="#000000"
+       android:shadowDx="3"
+       android:shadowDy="3"
+       android:shadowRadius="4"
+       />
+    
+
+</RelativeLayout>

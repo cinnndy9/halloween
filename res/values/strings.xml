@@ -5,5 +5,5 @@
     <string name="time">1:00</string>
     <string name="score">0</string>
     <string name="witchstory">The witch has made a lot of things for Halloween. Catch as most things as you can. But... Remember not everything you see is good for you.</string>
-
+	<string name="candystory">Some candies are hidden in the forest. Now you need to find them out and bring to the pupmkin house. Be careful of the blackghost!</string>
 </resources>

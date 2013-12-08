@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/level2background">
+    
+    <Button 
+       android:id="@+id/level2_gotomenu"
+       android:layout_width="42dp"
+       android:layout_height="42dp"
+       android:layout_marginLeft="241dp"
+       android:layout_marginTop="410dp"
+       android:background="@drawable/menu"/>
+     <Button 
+       android:id="@+id/level2_begingame"
+       android:layout_width="45dp"
+       android:layout_height="45dp"
+       android:layout_marginLeft="240dp"
+       android:layout_marginTop="360dp"
+       android:background="@drawable/begin"/>
+
+     <TextView
+         android:id="@+id/level2_story"
+         android:layout_width="180dp"
+         android:layout_height="90dp"
+         android:layout_marginTop="360dp"
+         android:layout_marginLeft="10dp"
+         android:text="@string/candystory"
+         android:textColor="#ffffff"
+         android:textSize="14sp"
+         android:textStyle="bold"
+         android:typeface="sans" />
+
+</RelativeLayout>

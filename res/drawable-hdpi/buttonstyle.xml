@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- color of border --> <item>
+    <shape>
+        <solid android:color = "#46FFD700"/>
+    </shape>
+</item> 
+<!-- color of main -->   
+<item android:bottom="1dp" android:right="1dp"
+      android:top="1dp" android:left="1dp">
+    <shape>
+        <solid android:color="#46FFFFE0"/>
+    </shape>
+</item>
+
+</layer-list>

@@ -25,7 +25,6 @@
         <activity android:name="com.assignment.halloween.witch.GameoverActivity"></activity>
         <activity android:name="com.assignment.halloween.witch.StartWitchActivity"></activity>
         <activity android:name="com.assignment.halloween.witch.WitchActivity"></activity>
-        <activity android:name="com.assignment.halloween.candy.StartCandyActivity"></activity>
         <activity android:name="com.assignment.halloween.bat.StartBatActivity"></activity>
         <activity android:name="com.assignment.halloween.bat.GameInterface"></activity>
         <activity android:name="com.assignment.halloween.bat.Success"></activity>
@@ -33,6 +32,9 @@
         <activity android:name="com.assignment.halloween.bat.Bat"></activity>
         <activity android:name="com.assignment.halloween.bat.Pumpkin"></activity>
         <activity android:name="com.assignment.halloween.bat.Ghost"></activity>
+        <activity android:name="com.assignment.halloween.candy.FindCandy"></activity>
+        <activity android:name="com.assignment.halloween.candy.Level2Success"></activity>
+        <activity android:name="com.assignment.halloween.candy.StartCandyActivity"></activity>
     </application>
 
 </manifest>

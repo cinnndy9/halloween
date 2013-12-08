@@ -25,12 +25,10 @@ public class Ghost extends Activity {
 	public void CatchBullet(double vx, LayoutParams bullet_layout){
 		if((bullet_layout.topMargin-layout.topMargin)<48 && (bullet_layout.topMargin-layout.topMargin)>0){
 		    if((bullet_layout.leftMargin-layout.leftMargin)>0 &&(bullet_layout.leftMargin-layout.leftMargin)<54){
-		    	System.out.println("vx3: "+vx);
 		    	if(change==false) 
 				  {
 		    		 bullet_layout.leftMargin=383;
 				     bullet_layout.topMargin=340;
-		    		System.out.println("vx2: "+vx);
 		    		change=true;
 				  }
 			}

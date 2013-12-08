@@ -4,41 +4,39 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.ImageView;
 
+public class Pumpkin extends Activity {
 
-public class Pumpkin extends Activity{
-	
 	private static int num;
 	private ImageView image;
 	private static String result;
-	
-	public void setPumpkin(ImageView ima){
-		image=ima;
+
+	public void setPumpkin(ImageView ima) {
+		image = ima;
 		num = 4;
-		result="unknown";
+		result = "unknown";
 	}
-	
-	public void disappear(){
+
+	public void disappear() {
 		this.image.setVisibility(View.INVISIBLE);
-		if(num>1){
-		   num -=1;
-		   System.out.println("pumpkin num: "+num);
-		}
-		else{
+		if (num > 1) {
+			num -= 1;
+			System.out.println("pumpkin num: " + num);
+		} else {
 			num = 0;
-			result="fail";
-			System.out.println("PPK num: "+num+"  Result: "+result);
+			result = "fail";
+			System.out.println("PPK num: " + num + "  Result: " + result);
 		}
 	}
-	
-	public String GetResult(){
+
+	public String GetResult() {
 		return result;
 	}
 
 	public ImageView getImage() {
 		return image;
 	}
-	
-	public int GetNum(){
+
+	public int GetNum() {
 		return num;
 	}
 

@@ -32,10 +32,11 @@ public class StartBatActivity extends Activity {
 		txt2.setVisibility(View.INVISIBLE);
 		txt3.setVisibility(View.INVISIBLE);
 		
-		handler.postDelayed(hide_txt1, 4500);
-		handler.postDelayed(show_txt2, 4800);
-		handler.postDelayed(hide_txt2, 9000);
-		handler.postDelayed(show_txt3, 9300);
+		
+		handler.postDelayed(hide_txt1, 3800);
+		handler.postDelayed(show_txt2, 4100);
+		handler.postDelayed(hide_txt2, 7300);
+		handler.postDelayed(show_txt3, 7600);
 		
 		next.setOnClickListener(new View.OnClickListener() {
 			

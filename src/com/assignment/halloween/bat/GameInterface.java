@@ -19,7 +19,7 @@ public class GameInterface extends Activity {
 	int pX, pY;// bullet position pX,pY 
 	double Vx,Vy;// bullet speed Vx£¬Vy
 	double slopeLeft, slopeRight;// slope
-	boolean click = true, run=false;
+	boolean click = true, run=false, playing;
 	TextView leftBatNum;
 	String leftPPkNum;
 	ImageView bullet,bat1,bat2,bat3,bat4,ghost;
@@ -30,10 +30,10 @@ public class GameInterface extends Activity {
 	Bat Bat2 = new Bat();
 	Bat Bat3 = new Bat();
 	Bat Bat4 = new Bat();
-	Pumpkin PPk1 = new Pumpkin();
-	Pumpkin PPk2 = new Pumpkin();
-	Pumpkin PPk3 = new Pumpkin();
-	Pumpkin PPk4 = new Pumpkin();
+	Pumpkin PPk1;
+	Pumpkin PPk2;
+	Pumpkin PPk3;
+	Pumpkin PPk4;
 	Ghost Gho = new Ghost();
 	
 	private Handler handler = new Handler();
@@ -43,6 +43,7 @@ public class GameInterface extends Activity {
 		setContentView(R.layout.game_interface);
 		
 		instance=this;
+		playing=true;
 		
         leftBatNum=(TextView) findViewById(R.id.batnum);
 		bullet = (ImageView) findViewById(R.id.bullet);
@@ -63,6 +64,11 @@ public class GameInterface extends Activity {
 		bat3_layout = (LayoutParams) bat3.getLayoutParams();
 		bat4_layout = (LayoutParams) bat4.getLayoutParams();
 		ghost_layout = (LayoutParams) ghost.getLayoutParams();
+		
+		PPk1 = new Pumpkin();
+		PPk2 = new Pumpkin();
+		PPk3 = new Pumpkin();
+		PPk4 = new Pumpkin();
 		
 		Bat1.setBat(bat1, bat1_layout,72,-30,leftBatNum);
 		Bat2.setBat(bat2, bat2_layout,225,-30,leftBatNum);
@@ -99,12 +105,14 @@ public class GameInterface extends Activity {
 					leftPPkNum = Integer.toString(PPk1.GetNum());
 				    intent.setClass(GameInterface.this, Success.class);
 				    intent.putExtra("Name", leftPPkNum);
+				    playing=false;
 				    GameInterface.instance.finish();
 				    Bat.instance2.finish();
 				    startActivity(intent);
 				}
 				else if(PPk1.GetResult().equals("fail")){
 					intent.setClass(GameInterface.this, Fail.class);
+					playing=false;
 					GameInterface.instance.finish();
 					Bat.instance2.finish();
 					startActivity(intent);
@@ -114,29 +122,37 @@ public class GameInterface extends Activity {
 	};
 	Runnable bat1_run = new Runnable(){
 		public void run(){	
+			if(playing==true){
 			Bat1.Move(PPk1);
 			Bat1.Beaten(bullet_layout);
+			}
 			handler.postDelayed(this, 50);
 		}
 	};
 	Runnable bat2_run = new Runnable(){
 		public void run(){
+			if(playing==true){
 			Bat2.Move(PPk2);
 			Bat2.Beaten(bullet_layout);
+			}
 			handler.postDelayed(this, 50);
 		}
 	};
 	Runnable bat3_run = new Runnable(){
 		public void run(){
+			if(playing==true){
 			Bat3.Move(PPk3);
 			Bat3.Beaten(bullet_layout);
+			}
 			handler.postDelayed(this, 50);
 		}
 	};
 	Runnable bat4_run = new Runnable(){
 		public void run(){
+			if(playing==true){
 			Bat4.Move(PPk4);
 			Bat4.Beaten(bullet_layout);
+			}
 			handler.postDelayed(this, 50);
 		}
 	};

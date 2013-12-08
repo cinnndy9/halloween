@@ -40,6 +40,7 @@ public class Success extends Activity{
 		ppkLeft= Integer.parseInt(num);
 		handler.postDelayed(show_ppk,2000);
 		System.out.println("num: "+num);
+		GameInterface.instance.finish();
 		
 		retry.setOnClickListener(new View.OnClickListener() {
 			
@@ -47,7 +48,7 @@ public class Success extends Activity{
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Success.this.finish();
-				GameInterface.instance.finish();
+				//GameInterface.instance.finish();
 				Intent intent = new Intent();
 				intent.setClass(Success.this, GameInterface.class);
 				startActivity(intent);
@@ -60,7 +61,7 @@ public class Success extends Activity{
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Success.this.finish();
-				GameInterface.instance.finish();
+				//GameInterface.instance.finish();
 				Intent intent = new Intent();
 				intent.setClass(Success.this, MenuActivity.class);
 				startActivity(intent);

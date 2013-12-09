@@ -25,34 +25,18 @@
    
    <TextView 
        android:id="@+id/level3txt1"
-       android:layout_width="160dp"
-       android:layout_height="100dp"
-       android:layout_marginLeft="35dp"
-       android:layout_marginTop="150dp"
-       android:text="As night falls, the bats find our goods and want to occupy them."
-       android:textSize="16sp"
+       android:layout_width="220dp"
+       android:layout_height="140dp"
+       android:layout_marginLeft="25dp"
+       android:layout_marginTop="135dp"
+       android:text="@string/batstory"
+       android:textSize="15sp"
        android:textColor="#D1D0CE"
+       android:shadowColor="#000000"
+       android:shadowDx="1"
+       android:shadowDy="1"
+       android:shadowRadius="2"
        />
    
-   <TextView 
-       android:id="@+id/level3txt2"
-       android:layout_width="200dp"
-       android:layout_height="80dp"
-       android:layout_marginLeft="35dp"
-       android:layout_marginTop="150dp"
-       android:text="Shoot them by using the candy bullet! To win the game, we have to kill 20 bats."
-       android:textSize="16sp"
-       android:textColor="#D1D0CE"
-       />
-   <TextView 
-       android:id="@+id/level3txt3"
-       android:layout_width="200dp"
-       android:layout_height="80dp"
-       android:layout_marginLeft="35dp"
-       android:layout_marginTop="150dp"
-       android:text="Hurry up! It is our final battle!"
-       android:textSize="18sp"
-       android:textColor="#D1D0CE"
-       />
 </RelativeLayout>
 

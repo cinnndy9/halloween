@@ -15,8 +15,7 @@ public class StartBatActivity extends Activity {
 	
 	private Button next;
 	private Button main_menu;
-	private TextView txt1,txt2,txt3;
-	private Handler handler = new Handler();
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +24,7 @@ public class StartBatActivity extends Activity {
 		
 		next=(Button)findViewById(R.id.game);
 		main_menu=(Button)findViewById(R.id.main_menu);
-		txt1=(TextView)findViewById(R.id.level3txt1);
-		txt2=(TextView)findViewById(R.id.level3txt2);
-		txt3=(TextView)findViewById(R.id.level3txt3);
 		
-		txt2.setVisibility(View.INVISIBLE);
-		txt3.setVisibility(View.INVISIBLE);
-		
-		
-		handler.postDelayed(hide_txt1, 3800);
-		handler.postDelayed(show_txt2, 4100);
-		handler.postDelayed(hide_txt2, 7300);
-		handler.postDelayed(show_txt3, 7600);
 		
 		next.setOnClickListener(new View.OnClickListener() {
 			
@@ -58,46 +46,4 @@ public class StartBatActivity extends Activity {
 			}
 		});
 	}
-	
-	
-	
-	Runnable hide_txt1 = new Runnable(){
-
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-			txt1.setVisibility(View.INVISIBLE);
-		}
-		
-	};
-	
-	Runnable show_txt2 = new Runnable(){
-
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-			txt2.setVisibility(View.VISIBLE);
-		}
-		
-	};
-	
-	Runnable hide_txt2 = new Runnable(){
-
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-			txt2.setVisibility(View.INVISIBLE);
-		}
-		
-	};
-	
-	Runnable show_txt3 = new Runnable(){
-
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-			txt3.setVisibility(View.VISIBLE);
-		}
-		
-	};
 }

@@ -17,8 +17,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int back=0x7f020000;
@@ -67,116 +67,116 @@ public final class R {
         public static final int menu=0x7f02002b;
         public static final int menu_black=0x7f02002c;
         public static final int moneybag=0x7f02002d;
-        public static final int next_level=0x7f02002e;
-        public static final int nextlevel=0x7f02002f;
-        public static final int no1=0x7f020030;
-        public static final int play2=0x7f020031;
-        public static final int play3=0x7f020032;
-        public static final int pumpkin=0x7f020033;
-        public static final int pumpkin_0=0x7f020034;
-        public static final int restart=0x7f020035;
-        public static final int restart_black=0x7f020036;
-        public static final int retry=0x7f020037;
-        public static final int ruby=0x7f020038;
-        public static final int score=0x7f020039;
-        public static final int scoreminus1=0x7f02003a;
-        public static final int scoreplus1=0x7f02003b;
-        public static final int scoreplus10=0x7f02003c;
-        public static final int scoreplus2=0x7f02003d;
-        public static final int scoreplus5=0x7f02003e;
-        public static final int switch_0=0x7f02003f;
-        public static final int white_ghost2=0x7f020040;
-        public static final int witchbackground=0x7f020041;
+        public static final int music=0x7f02002e;
+        public static final int next_level=0x7f02002f;
+        public static final int nextlevel=0x7f020030;
+        public static final int no1=0x7f020031;
+        public static final int play2=0x7f020032;
+        public static final int play3=0x7f020033;
+        public static final int pumpkin=0x7f020034;
+        public static final int pumpkin_0=0x7f020035;
+        public static final int restart=0x7f020036;
+        public static final int restart_black=0x7f020037;
+        public static final int retry=0x7f020038;
+        public static final int ruby=0x7f020039;
+        public static final int score=0x7f02003a;
+        public static final int scoreminus1=0x7f02003b;
+        public static final int scoreplus1=0x7f02003c;
+        public static final int scoreplus10=0x7f02003d;
+        public static final int scoreplus2=0x7f02003e;
+        public static final int scoreplus5=0x7f02003f;
+        public static final int switch_0=0x7f020040;
+        public static final int white_ghost2=0x7f020041;
+        public static final int witchbackground=0x7f020042;
     }
     public static final class id {
-        public static final int action_settings=0x7f080057;
-        public static final int back_to_proppk=0x7f080050;
-        public static final int bat11=0x7f080042;
-        public static final int bat21=0x7f080043;
-        public static final int bat31=0x7f080044;
-        public static final int bat41=0x7f080045;
-        public static final int batleft=0x7f08003c;
-        public static final int batnum=0x7f08003d;
-        public static final int blackghost=0x7f080022;
-        public static final int btnBack=0x7f08000f;
-        public static final int btnHome=0x7f080006;
-        public static final int btnLevelBat=0x7f080008;
-        public static final int btnLevelCandy=0x7f080005;
-        public static final int btnLevelWitch=0x7f080007;
-        public static final int btnMenu=0x7f080002;
-        public static final int btnPlay=0x7f080003;
-        public static final int btnRetry=0x7f080001;
-        public static final int btnSettings=0x7f080004;
-        public static final int btn_1=0x7f08001a;
-        public static final int btn_10=0x7f080024;
-        public static final int btn_11=0x7f080025;
-        public static final int btn_12=0x7f080026;
-        public static final int btn_13=0x7f080027;
-        public static final int btn_14=0x7f080028;
-        public static final int btn_15=0x7f080029;
-        public static final int btn_16=0x7f08002a;
-        public static final int btn_17=0x7f08002b;
-        public static final int btn_18=0x7f08002c;
-        public static final int btn_19=0x7f08002d;
-        public static final int btn_2=0x7f08001b;
-        public static final int btn_20=0x7f08002e;
-        public static final int btn_21=0x7f08002f;
-        public static final int btn_22=0x7f080030;
-        public static final int btn_23=0x7f080031;
-        public static final int btn_24=0x7f080032;
-        public static final int btn_25=0x7f080033;
-        public static final int btn_3=0x7f08001c;
-        public static final int btn_4=0x7f08001d;
-        public static final int btn_5=0x7f08001e;
-        public static final int btn_6=0x7f08001f;
-        public static final int btn_7=0x7f080020;
-        public static final int btn_8=0x7f080021;
-        public static final int btn_9=0x7f080023;
-        public static final int bullet=0x7f08003b;
-        public static final int candy1=0x7f080036;
-        public static final int candy2=0x7f080037;
-        public static final int fail=0x7f08004d;
-        public static final int finalScore=0x7f080000;
-        public static final int game=0x7f080009;
-        public static final int ghostleft=0x7f080046;
-        public static final int hint=0x7f080039;
-        public static final int imgBasket=0x7f080012;
-        public static final int imgEffect=0x7f080013;
-        public static final int imgObject=0x7f080011;
-        public static final int imgScore=0x7f080014;
-        public static final int img_findcandy1=0x7f080018;
-        public static final int img_findcandy2=0x7f080019;
-        public static final int img_tomain=0x7f08003a;
-        public static final int imgbtn_switch1=0x7f080034;
-        public static final int imgbtn_switch2=0x7f080035;
-        public static final int leftppk1=0x7f080052;
-        public static final int leftppk2=0x7f080053;
-        public static final int leftppk3=0x7f080054;
-        public static final int leftppk4=0x7f080055;
-        public static final int level2_begingame=0x7f080048;
-        public static final int level2_gotomenu=0x7f080047;
-        public static final int level2_menu=0x7f08004b;
-        public static final int level2_next=0x7f08004a;
-        public static final int level2_story=0x7f080049;
-        public static final int level3_fail_chooselevel=0x7f08004f;
-        public static final int level3_success_chooselevel=0x7f080051;
-        public static final int level3_txt1=0x7f08004c;
-        public static final int level3_txt2=0x7f080056;
-        public static final int level3txt1=0x7f08000b;
-        public static final int level3txt2=0x7f08000c;
-        public static final int level3txt3=0x7f08000d;
-        public static final int main_menu=0x7f08000a;
-        public static final int ppk1=0x7f08003e;
-        public static final int ppk2=0x7f08003f;
-        public static final int ppk3=0x7f080040;
-        public static final int ppk4=0x7f080041;
-        public static final int pumpkin=0x7f080038;
-        public static final int role=0x7f080016;
-        public static final int try_again_proppk=0x7f08004e;
-        public static final int tvScore=0x7f080015;
-        public static final int tvStory=0x7f08000e;
-        public static final int tvTimer=0x7f080010;
-        public static final int txtoutcome=0x7f080017;
+        public static final int action_settings=0x7f090056;
+        public static final int back_to_proppk=0x7f09004f;
+        public static final int bat11=0x7f090041;
+        public static final int bat21=0x7f090042;
+        public static final int bat31=0x7f090043;
+        public static final int bat41=0x7f090044;
+        public static final int batleft=0x7f09003b;
+        public static final int batnum=0x7f09003c;
+        public static final int blackghost=0x7f090021;
+        public static final int btnBack=0x7f09000e;
+        public static final int btnHome=0x7f090006;
+        public static final int btnLevelBat=0x7f090008;
+        public static final int btnLevelCandy=0x7f090005;
+        public static final int btnLevelWitch=0x7f090007;
+        public static final int btnMenu=0x7f090002;
+        public static final int btnNext=0x7f090003;
+        public static final int btnPlay=0x7f090004;
+        public static final int btnPlayMusic=0x7f090009;
+        public static final int btnRetry=0x7f090001;
+        public static final int btn_1=0x7f090019;
+        public static final int btn_10=0x7f090023;
+        public static final int btn_11=0x7f090024;
+        public static final int btn_12=0x7f090025;
+        public static final int btn_13=0x7f090026;
+        public static final int btn_14=0x7f090027;
+        public static final int btn_15=0x7f090028;
+        public static final int btn_16=0x7f090029;
+        public static final int btn_17=0x7f09002a;
+        public static final int btn_18=0x7f09002b;
+        public static final int btn_19=0x7f09002c;
+        public static final int btn_2=0x7f09001a;
+        public static final int btn_20=0x7f09002d;
+        public static final int btn_21=0x7f09002e;
+        public static final int btn_22=0x7f09002f;
+        public static final int btn_23=0x7f090030;
+        public static final int btn_24=0x7f090031;
+        public static final int btn_25=0x7f090032;
+        public static final int btn_3=0x7f09001b;
+        public static final int btn_4=0x7f09001c;
+        public static final int btn_5=0x7f09001d;
+        public static final int btn_6=0x7f09001e;
+        public static final int btn_7=0x7f09001f;
+        public static final int btn_8=0x7f090020;
+        public static final int btn_9=0x7f090022;
+        public static final int bullet=0x7f09003a;
+        public static final int candy1=0x7f090035;
+        public static final int candy2=0x7f090036;
+        public static final int fail=0x7f09004c;
+        public static final int finalScore=0x7f090000;
+        public static final int game=0x7f09000a;
+        public static final int ghostleft=0x7f090045;
+        public static final int hint=0x7f090038;
+        public static final int imgBasket=0x7f090011;
+        public static final int imgEffect=0x7f090012;
+        public static final int imgObject=0x7f090010;
+        public static final int imgScore=0x7f090013;
+        public static final int img_findcandy1=0x7f090017;
+        public static final int img_findcandy2=0x7f090018;
+        public static final int img_tomain=0x7f090039;
+        public static final int imgbtn_switch1=0x7f090033;
+        public static final int imgbtn_switch2=0x7f090034;
+        public static final int leftppk1=0x7f090051;
+        public static final int leftppk2=0x7f090052;
+        public static final int leftppk3=0x7f090053;
+        public static final int leftppk4=0x7f090054;
+        public static final int level2_begingame=0x7f090047;
+        public static final int level2_gotomenu=0x7f090046;
+        public static final int level2_menu=0x7f09004a;
+        public static final int level2_next=0x7f090049;
+        public static final int level2_story=0x7f090048;
+        public static final int level3_fail_chooselevel=0x7f09004e;
+        public static final int level3_success_chooselevel=0x7f090050;
+        public static final int level3_txt1=0x7f09004b;
+        public static final int level3_txt2=0x7f090055;
+        public static final int level3txt1=0x7f09000c;
+        public static final int main_menu=0x7f09000b;
+        public static final int ppk1=0x7f09003d;
+        public static final int ppk2=0x7f09003e;
+        public static final int ppk3=0x7f09003f;
+        public static final int ppk4=0x7f090040;
+        public static final int pumpkin=0x7f090037;
+        public static final int role=0x7f090015;
+        public static final int try_again_proppk=0x7f09004d;
+        public static final int tvScore=0x7f090014;
+        public static final int tvStory=0x7f09000d;
+        public static final int tvTimer=0x7f09000f;
+        public static final int txtoutcome=0x7f090016;
     }
     public static final class layout {
         public static final int activity_gameover=0x7f030000;
@@ -193,15 +193,19 @@ public final class R {
         public static final int protectppk_success=0x7f03000b;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
+    }
+    public static final class raw {
+        public static final int backgmusic1=0x7f040000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int candystory=0x7f050005;
-        public static final int score=0x7f050003;
-        public static final int time=0x7f050002;
-        public static final int witchstory=0x7f050004;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int batstory=0x7f060006;
+        public static final int candystory=0x7f060005;
+        public static final int score=0x7f060003;
+        public static final int time=0x7f060002;
+        public static final int witchstory=0x7f060004;
     }
     public static final class style {
         /** 
@@ -225,10 +229,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }

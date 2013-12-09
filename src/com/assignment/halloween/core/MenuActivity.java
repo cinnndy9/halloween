@@ -2,6 +2,7 @@ package com.assignment.halloween.core;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -18,12 +19,17 @@ public class MenuActivity extends Activity {
 	private Button btnLevelWitch;
 	private Button btnLevelCandy;
 	private Button btnLevelBat;
+	private Button btnmusic;
+	private MediaPlayer mediaPlayer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_menu);
 		super.onCreate(savedInstanceState);
-
+		
+		//mediaPlayer = MediaPlayer.create(this, R.raw.backgmusic1);
+		//if(!mediaPlayer.isPlaying()) mediaPlayer.start();
+		
 		btnHome = (Button) findViewById(R.id.btnHome);
 		btnHome.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -59,6 +65,16 @@ public class MenuActivity extends Activity {
 				startActivityForResult(myIntent, 0);
 			}
 		});
+		
+		btnmusic = (Button) findViewById(R.id.btnPlayMusic);
+		btnmusic.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if(mediaPlayer.isPlaying()) mediaPlayer.pause();	
+				else if(!mediaPlayer.isPlaying()) mediaPlayer.start();	
+			}
+		});
+		
 
 	}
 

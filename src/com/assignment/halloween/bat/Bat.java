@@ -55,7 +55,7 @@ public class Bat extends Activity{
 	public void Beaten(LayoutParams bullet_layout){
 		if(catchPPk==false){
 			if((bullet_layout.topMargin-layout.topMargin)<42 && (bullet_layout.topMargin-layout.topMargin)>0){
-    		    if((bullet_layout.leftMargin-layout.leftMargin)>2 &&(bullet_layout.leftMargin-layout.leftMargin)<45){
+    		    if((bullet_layout.leftMargin-layout.leftMargin)>0 &&(bullet_layout.leftMargin-layout.leftMargin)<45){
 				   disappear();
 				}
     		 }
@@ -93,7 +93,7 @@ public class Bat extends Activity{
 			}
 			
 		};
-		handler.postDelayed(emergeTime, BatAppearTime(7)*1000);
+		handler.postDelayed(emergeTime, BatAppearTime(5)*1000);
 	}
 	
 	int BatAppearTime(int time){

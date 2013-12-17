@@ -16,6 +16,7 @@
         android:layout_alignLeft="@+id/btnHome"
         android:layout_alignParentBottom="true"
         android:background="@drawable/level_candy" />
+    
 
     <Button
         android:id="@+id/btnLevelWitch"
@@ -43,5 +44,14 @@
         android:layout_marginLeft="34dp"
         android:layout_toRightOf="@+id/btnLevelCandy"
         android:background="@drawable/level_bat" />
+
+    <Button
+        android:id="@+id/btnPlayMusic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btnLevelBat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/music" />
 
 </RelativeLayout>

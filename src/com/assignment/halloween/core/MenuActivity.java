@@ -10,7 +10,6 @@ import android.widget.Button;
 
 import com.assignment.halloween.R;
 import com.assignment.halloween.bat.StartBatActivity;
-import com.assignment.halloween.candy.FindCandy;
 import com.assignment.halloween.candy.StartCandyActivity;
 import com.assignment.halloween.witch.StartWitchActivity;
 

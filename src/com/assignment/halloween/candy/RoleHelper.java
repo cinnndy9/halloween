@@ -1,9 +1,6 @@
 package com.assignment.halloween.candy;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout.LayoutParams;

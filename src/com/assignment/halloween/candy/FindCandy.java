@@ -1,20 +1,17 @@
 package com.assignment.halloween.candy;
 
-import java.util.ArrayList;
-
-import com.assignment.halloween.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
+
+import com.assignment.halloween.R;
 
 public class FindCandy extends Activity{
 	ImageButton img_switch1, img_switch2, img_candy1, img_candy2, img_pumpkin, img_back;

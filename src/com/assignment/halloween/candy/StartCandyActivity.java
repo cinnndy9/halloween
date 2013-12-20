@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.assignment.halloween.R;
-import com.assignment.halloween.bat.GameInterface;
 import com.assignment.halloween.core.MenuActivity;
 
 public class StartCandyActivity extends Activity{

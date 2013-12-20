@@ -80,7 +80,6 @@ public class BlackghostHelper {
 	 */
 	void move(Button btnLeftup, Button btnRightup, Button btnLeftbottom, Button btnRightbottom){
 		LayoutParams par = (LayoutParams)img_blackghost.getLayoutParams();
-		int[] locationLeftup = getBtnLocation(btnLeftup);
 		int[] locationRightup = getBtnLocation(btnRightup);
 		int[] locationLeftButtom = getBtnLocation(btnLeftbottom);
 		int[] locationRightButtom = getBtnLocation(btnRightbottom);

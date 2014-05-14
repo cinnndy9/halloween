@@ -79,7 +79,8 @@ public class WitchActivity extends Activity {
 
 				parObj.topMargin = 0;
 				Random myRandom = new Random();
-				parObj.leftMargin += myRandom.nextInt(screen_width - parObj.width - 150) - parObj.leftMargin;
+				parObj.leftMargin += myRandom.nextInt(screen_width - parObj.width - 150)
+						- parObj.leftMargin;
 				imgObject.setLayoutParams(parObj);
 				curObject = myRandom.nextInt(7);
 
@@ -121,6 +122,8 @@ public class WitchActivity extends Activity {
 	private ImageView imgObject;
 	private Long minutes;
 
+	private boolean timerRunning;
+
 	private int score;
 	private Long seconds;
 	private Long spentTime;
@@ -131,23 +134,25 @@ public class WitchActivity extends Activity {
 
 	private Runnable timer = new Runnable() {
 		public void run() {
-			final TextView time = (TextView) findViewById(R.id.tvTimer);
-			spentTime = System.currentTimeMillis() - startTime;
+			if (timerRunning) {
+				final TextView time = (TextView) findViewById(R.id.tvTimer);
+				spentTime = System.currentTimeMillis() - startTime;
 
-			if ((state == References.LEVEL_WITCH) && (spentTime >= 1000 * 60)) {
-				// (minutes == 0) && (seconds == 1)) {
+				if ((state == References.LEVEL_WITCH) && (spentTime >= 1000 * 60)) {
 
-				Intent myIntent = new Intent(imgBasket.getContext(), GameoverActivity.class);
-				myIntent.putExtra("score", Integer.toString(score));
-				startActivityForResult(myIntent, 0);
+					timerRunning = false;
+					Intent myIntent = new Intent(imgBasket.getContext(), GameoverActivity.class);
+					myIntent.putExtra("score", Integer.toString(score));
+					startActivityForResult(myIntent, 0);
 
-				state = References.LEVEL_WITCH_OVER;
+					state = References.LEVEL_WITCH_OVER;
+				}
+				minutes = (long) 0;
+				long sec = 60 - (spentTime / 1000) % 60;
+				seconds = (sec == 60) ? 0 : sec;
+				time.setText(minutes + ":" + seconds);
+				handler.postDelayed(this, 1000);
 			}
-			minutes = (long) 0;
-			long sec = 60 - (spentTime / 1000) % 60;
-			seconds = (sec == 60) ? 0 : sec;
-			time.setText(minutes + ":" + seconds);
-			handler.postDelayed(this, 1000);
 		}
 	};
 
@@ -156,6 +161,7 @@ public class WitchActivity extends Activity {
 		setContentView(R.layout.activity_witch);
 		super.onCreate(savedInstanceState);
 
+		timerRunning = true;
 		startTime = System.currentTimeMillis();
 		spentTime = (long) 0;
 		score = 0;
@@ -205,6 +211,7 @@ public class WitchActivity extends Activity {
 		btnMenu.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				timerRunning = false;
 				Intent myIntent = new Intent(v.getContext(), MenuActivity.class);
 				startActivityForResult(myIntent, 0);
 			}
@@ -214,6 +221,7 @@ public class WitchActivity extends Activity {
 		btnRetry.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				timerRunning = false;
 				Intent myIntent = new Intent(v.getContext(), WitchActivity.class);
 				startActivityForResult(myIntent, 0);
 			}
